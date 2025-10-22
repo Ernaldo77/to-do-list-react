@@ -4,7 +4,7 @@ function TarefasPendentes({ tarefas, onToggle, onRemove }) {
   const tarefasPendentes = tarefas.filter(tarefa => !tarefa.concluida);
   return (
     <>
-      <h2>Tarefas Pendentes</h2>
+      <h2 className='titulo-pendentes'>Tarefas Pendentes</h2>
       <ListaDeTarefas
         tarefas={tarefasPendentes}
         onToggle={onToggle}
