@@ -2,7 +2,7 @@ import ItemDaTarefa from './ItemDaTarefa';
 
 function ListaDeTarefas({ tarefas, onToggle, onRemove }) {
   return (
-    <ul className="task-list">
+    <ul className="list-group">
       {tarefas.map(tarefa => (
         <ItemDaTarefa
           key={tarefa.id}
